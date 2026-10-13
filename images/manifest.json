@@ -1,0 +1,142 @@
+[
+  {
+    "file": "images/windows/ar-dashboard.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "6159d6c67de8f4a32f6bbf9d11aedd0a90bb68f7c876e429467a7b5408eebf28",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-devices.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "e1e210c7f792fe096602cceaeeab05d9fb474e8f65228f66379b254b2b59577e",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-ip-privacy.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "029081a38a40a2d6746b8717bf5ae1ce8b29d9c613ae6300527901d54efc8301",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-island-compact.png",
+    "width": 648,
+    "height": 85,
+    "sha256": "1a2d9883c6c669e8e1d85c4c88e11bdda033d593e1d65d05534d7d6e1f859b0b",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-island-expanded.png",
+    "width": 648,
+    "height": 297,
+    "sha256": "3ca2d304577f108e01db116f4f8c4002143a88897b993ce43671814850f1a7a5",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-messages.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "d9c843b44eee330467238836a23dac0446829a1fbce16ab110e03ddda3ac0b0f",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-read-all-confirm.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "52691e7938cfbba9b8bb7f2a52e96bc655bd92fc229ed8fff5a066c965b2ae5d",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-read-all.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "da8524c604310e3cb963aee01970de10f9eac82529db7ce565ef777e4d6711ff",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-speed-units.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "cd07c3c2f73283763b3f8bf191963abfe8bb85574b957100ec24be544d922f0d",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/ar-usage.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "a3ee99bad43b91e0c78aa15b7de3a7fe656327d0de9dd22babb07919bdba908f",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/en-dashboard.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "f9e867cb5265a665f0d8e4a1e218d49c8b323f1806655f84816e5f2f3d464e89",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/en-speed-units.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "a9822171d64cae5765caeae755969c84fe11f8ab543effbfb571232eeb195a43",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/strip-MB-s.png",
+    "width": 356,
+    "height": 35,
+    "sha256": "e117f0de2742b1dfe42ef1b0c8abf714b58cb3a90d401a84db6819d882e6332c",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/windows/strip-Mbps.png",
+    "width": 356,
+    "height": 35,
+    "sha256": "e54c74c0880a56f60a37f76490539c8f430ddfef5d12532c677b6c1c1fce55ba",
+    "data": "synthetic, device addresses hidden"
+  },
+  {
+    "file": "images/android/ar-dark-overview.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "dcf4962340cd3a4d1c9e88e731a8659fbc47f08323171b8997b7990469c9926d",
+    "data": "synthetic, no device address screens"
+  },
+  {
+    "file": "images/android/ar-dark-messages.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "6d7d34e158d98b90986b0cca18dc919c5b20921f8859e9c5a921f245adbf0a46",
+    "data": "synthetic, no device address screens"
+  },
+  {
+    "file": "images/android/ar-dark-usage.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "00ee9ddb6332948b11cd51021190533d754b5bb267662c25e262128c7a29bced",
+    "data": "synthetic, no device address screens"
+  },
+  {
+    "file": "images/android/en-light-overview.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "f4a5049bf6275403d6fe9a0b44e91bcd6ea135b1976ef61e95b05e9de596053b",
+    "data": "synthetic, no device address screens"
+  },
+  {
+    "file": "images/android/island-compact.png",
+    "width": 2400,
+    "height": 1080,
+    "sha256": "b8b3a4c766ec804e741c3aee28fcf2db1f11f52ee0831473a52f08ee4b91ccc4",
+    "data": "synthetic, no device address screens"
+  },
+  {
+    "file": "images/android/island-expanded.png",
+    "width": 2400,
+    "height": 1080,
+    "sha256": "3c8dbab7ddeb62de61b8185dca06e101f35eb117eb46d5d5f808b0a6145d4e59",
+    "data": "synthetic, no device address screens"
+  }
+]

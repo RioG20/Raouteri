@@ -1,0 +1,14 @@
+*.exe
+*.zip
+*.apk
+*.pdb
+*.jks
+*.keystore
+*.pfx
+.private/
+src/
+tests/
+settings.json
+usage.json
+diagnostics.json
+*.jsonl
