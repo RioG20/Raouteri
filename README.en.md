@@ -14,13 +14,21 @@ Windows provides a taskbar strip, tray indicators and a draggable island that ex
 
 | Platform | App version | File |
 |---|---|---|
-| Windows 11 x64 | 1.2.9 | [EXE installer](https://github.com/RioG20/Raouteri/releases/download/v2026.10.13/Raouteri-Windows-Setup-1.2.9.exe) |
-| Windows 11 x64 | 1.2.9 | [Complete portable ZIP](https://github.com/RioG20/Raouteri/releases/download/v2026.10.13/Raouteri-Windows-Portable-1.2.9.zip) |
-| Android 8.0+ | 1.0.0 | [Signed APK](https://github.com/RioG20/Raouteri/releases/download/v2026.10.13/Raouteri-Android-1.0.0.apk) |
+| Windows 11 x64 | 1.3.0 | [EXE installer](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Windows-Setup-1.3.0.exe) |
+| Windows 11 x64 | 1.3.0 | [Complete portable ZIP](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Windows-Portable-1.3.0.zip) |
+| Android 8.0+ | 1.0.0 | [Signed APK](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Android-1.0.0.apk) |
 
-[All releases](https://github.com/RioG20/Raouteri/releases) · [SHA-256 checksums](https://github.com/RioG20/Raouteri/releases/download/v2026.10.13/SHA256SUMS.txt)
+[All releases](https://github.com/RioG20/Raouteri/releases) · [SHA-256 checksums](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/SHA256SUMS.txt)
 
 This is a **distribution repository** with guides, screenshots and downloadable binaries in Releases. Development source, personal test data and private signing keys are not published here. GitHub's automatic “Source code” archives contain only this repository's documentation and images. Use the EXE, portable ZIP or APK above to install the app.
+
+## New in Windows 1.3.0: accounts and connection profiles
+
+In Settings, add and name a router, enter its management address, username and password, then save or test the connection. Each profile has its own protected password, usage, event history and device aliases. Switching activates the saved profile immediately; save your edits first.
+
+**The implemented connector is Huawei WebUI/SCRAM compatible with the tested device. A configurable username does not automatically add support for every router.** OpenWrt and MikroTik are researched, not enabled. See [compatibility and setup](docs/ROUTER-PROFILES.md). Android remains 1.0.0 without this addition.
+
+![Router connection profiles](images/windows/en-profiles.png)
 
 ## Tested router and firmware
 
@@ -34,7 +42,7 @@ This is a **distribution repository** with guides, screenshots and downloadable 
 | Hardware | CL4E6888M |
 | Customization | E6888-982-CUST 4.0.0.1(C1133) |
 
-Other models or firmware versions require separate testing: authentication, counters, SMS and commands may differ. Windows 1.2.9 and Android 1.0.0 are application versions, not router firmware versions.
+Other models or firmware versions require separate testing: authentication, counters, SMS and commands may differ. Windows 1.3.0 and Android 1.0.0 are application versions, not router firmware versions.
 
 ## Why Raouteri? How does it relate to AI Life?
 
@@ -44,7 +52,7 @@ Raouteri is independent and is not affiliated with or endorsed by Huawei. It is 
 
 ## Platform features
 
-| Feature | Windows 1.2.9 | Android 1.0.0 |
+| Feature | Windows 1.3.0 | Android 1.0.0 |
 |---|---|---|
 | Router battery, charging state and alerts | Yes | Yes |
 | Upload/download traffic and connected device count | Yes | Yes |
@@ -56,13 +64,15 @@ Raouteri is independent and is not affiliated with or endorsed by Huawei. It is 
 | Mark all messages in an inbox as read | Yes, with confirmation and cancellation | Not in 1.0.0 |
 | Show/hide device IP addresses | Yes | Not in 1.0.0 |
 | Choose a fixed strip speed unit, e.g. Mbps or MB/s | Yes | Not in 1.0.0 |
+| Multiple router profiles and editable administration username | Yes, for compatible Huawei interfaces | Not in 1.0.0 |
+| Hide battery when no valid reading is available | Yes | Not ported in this update |
 
 Per-device consumption and rates depend on the router's available counters. Zero counters do not establish support; other phones' usage may be unavailable. Wi-Fi link rate is not Internet speed. Displayed traffic rate is current activity, not a maximum-speed test. Local history starts when monitoring begins and cannot retrieve earlier history.
 
 ## Install and use on Windows
 
 1. Download and run the EXE installer. Alternatively, extract the entire portable ZIP into a fixed folder and run `HuaweiRouterMonitor.exe` inside it. Copying only that executable is insufficient.
-2. Connect to the router network. Enter the management address, normally `http://192.168.8.1/`, and your **router administration password** in Settings, then save.
+2. Connect to the router network. Enter the management address, normally `http://192.168.8.1/`, administration username (default `admin`) and your **router administration password** in Settings, then save or test the connection.
 3. Choose the taskbar strip or floating island. Click to expand, drag the grip to move, or use ↓ to return to the taskbar.
 4. Choose strip metrics, speed units, size and transparency in Settings. The Devices page includes a saved Show IP addresses checkbox.
 5. Start with Windows is optional. Closing the main window keeps monitoring in the tray; use the tray menu to exit. Windows may initially place icons in its hidden tray menu.
@@ -84,7 +94,11 @@ The release APK is signed with the project's key; the private key is not publish
 Screenshots show the actual app interface using isolated demo data. Device names, readings and SMS are samples only. **Personal device addresses, passwords and real messages are absent.**
 
 <details>
-<summary>Windows: island, IP privacy, SMS and speed units</summary>
+<summary>Windows: connection profiles, island, privacy and SMS</summary>
+
+![Account and connection test](images/windows/en-profiles-credentials.png)
+
+![No battery reading](images/windows/router-without-battery.png)
 
 ![Compact island](images/windows/ar-island-compact.png)
 
