@@ -201,5 +201,75 @@
     "height": 975,
     "sha256": "b62ec39175f5ec8a5231b173f430f0860fce50e1c7a2802312d451033f07a6eb",
     "data": "Windows 1.3.1 isolated session-recovery fixture; synthetic messages only; no router requests or personal values"
+  },
+  {
+    "file": "images/android/ar-status-bar-router-68.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "5dc82bad549e4ab21327e0ad5547b3b42bcdc749482a82b4439d7b51357578d3",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/ar-monitoring-notification.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "8dffd6d79c53f861142462194b67eaeb1bebe11ad8d35e6b007ba77462bbdb7b",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/ar-connection-fields.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "d96876432dc26927a999cb597bac10e24e6dcd3f9f43961258c8c5c0128b9e87",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/en-connection-fields.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "8a858838936bbfc47ba99a0db9df920c628047731e6177b0891a8a828fc192aa",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/ar-ip-hidden.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "388e50cb988a5c4f2a3e571b81331395f4cda0e97a6128c800764171b0fb500e",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/en-ip-hidden.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "ad9c1a8f3c1a75c2519bc8d125b5276fe5ab4f932ee2a3dd10fefbeb156d6a38",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/ar-bulk-confirm.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "037af0b2aaeff5a54fe0d3076654c85f1dedd9b35957b0a593a01acff39e2f31",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/en-bulk-confirm.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "855e9698fcea85ccaf0d541c0c1a22666372802c6fc9336533a7335cead95c8b",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/ar-notification-settings.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "d39f1626a2fcf3e88b8f65f5df2e972c5e0e8de806ff86af7c952744db664246",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
+  },
+  {
+    "file": "images/android/en-notification-settings.png",
+    "width": 1080,
+    "height": 2400,
+    "sha256": "84729ff6ce9e2393eb4499047548e6d80bb83968de9b9adb34e5dd656f70fb92",
+    "data": "Android 1.1.0 emulator; synthetic/demo data, device IP addresses hidden, sample router.local account only"
   }
 ]
