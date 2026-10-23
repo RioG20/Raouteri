@@ -14,15 +14,21 @@
 
 | النظام | النسخة | الملف |
 |---|---|---|
-| Windows 11 x64 | 1.3.0 | [مثبّت EXE](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Windows-Setup-1.3.0.exe) |
-| Windows 11 x64 | 1.3.0 | [حزمة ZIP كاملة دون تثبيت](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Windows-Portable-1.3.0.zip) |
-| Android 8.0 أو أحدث | 1.0.0 | [APK موقّع](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Android-1.0.0.apk) |
+| Windows 11 x64 | 1.3.1 | [مثبّت EXE](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Windows-Setup-1.3.1.exe) |
+| Windows 11 x64 | 1.3.1 | [حزمة ZIP كاملة دون تثبيت](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Windows-Portable-1.3.1.zip) |
+| Android 8.0 أو أحدث | 1.0.0 | [APK موقّع](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Android-1.0.0.apk) |
 
-[كل الإصدارات](https://github.com/RioG20/Raouteri/releases) · [بصمات SHA-256 للملفات](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/SHA256SUMS.txt)
+[كل الإصدارات](https://github.com/RioG20/Raouteri/releases) · [بصمات SHA-256 للملفات](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/SHA256SUMS.txt)
 
 هذا **مستودع توزيع**: شرح وصور وملفات نهائية في Releases. كود التطوير وبيانات الاختبار الشخصية ومفاتيح التوقيع غير منشورة هنا. ملفات Source code التي يولدها GitHub تلقائيًا تحتوي مستندات هذا المستودع وصوره فقط؛ اختر EXE أو ZIP أو APK من الجدول لتثبيت التطبيق.
 
-## جديد ويندوز 1.3.0: حسابات وملفات اتصال
+## إصلاح الدخول في ويندوز 1.3.1
+
+استعادة الدخول تلقائيًا عند انتهاء الجلسة، وانتظار قبل إعادة المحاولة عند انشغال الراوتر مؤقتًا. رفض كلمة المرور أو قفل المحاولات لا يكرران تلقائيًا. يظهر زر «إعادة الاتصال» مع سبب أوضح، وصفحة الرسائل تتعافى عند رجوع المصادقة، دون تغيير كلمة الدخول المحفوظة أو إعادة أوامر التحكم. Android ما زال 1.0.0.
+
+![إعادة الاتصال عند تأجيل الدخول](images/windows/ar-reconnect.png)
+
+## حسابات وملفات اتصال ويندوز
 
 من الإعدادات يمكنك إضافة راوتر، وتسميته، وإدخال عنوان الإدارة واسم المستخدم وكلمة الدخول، ثم حفظ الاتصال أو اختباره. لكل ملف كلمته المحمية وسجل استهلاك وتنبيهات وأسماء أجهزة منفصلة. التبديل يشغّل الملف المحفوظ فورًا؛ احفظ تعديلاتك أولًا.
 
@@ -42,7 +48,7 @@
 | المعدات | CL4E6888M |
 | ملف التخصيص | E6888-982-CUST 4.0.0.1(C1133) |
 
-موديل أو Firmware مختلف يحتاج اختبارًا مستقلًا؛ قد تختلف المصادقة والعدادات والرسائل والأوامر. أرقام 1.3.0 و1.0.0 هي إصدارات التطبيق، وليست Firmware الراوتر.
+موديل أو Firmware مختلف يحتاج اختبارًا مستقلًا؛ قد تختلف المصادقة والعدادات والرسائل والأوامر. أرقام 1.3.1 و1.0.0 هي إصدارات التطبيق، وليست Firmware الراوتر.
 
 ## لماذا راوتري؟ وما علاقته بـ AI Life؟
 
@@ -52,7 +58,7 @@
 
 ## المميزات بحسب النظام
 
-| الميزة | Windows 1.3.0 | Android 1.0.0 |
+| الميزة | Windows 1.3.1 | Android 1.0.0 |
 |---|---|---|
 | بطارية الراوتر وحالة الشحن والتنبيهات | نعم | نعم |
 | سرعة الرفع والتنزيل وعدد الأجهزة | نعم | نعم |

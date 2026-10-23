@@ -4,7 +4,7 @@
 
 ## العربية
 
-هذه الإضافة في **Windows 1.3.0 فقط**. Android المنشور ما زال 1.0.0.
+هذه الإضافة في **Windows 1.3.1 فقط**. Android المنشور ما زال 1.0.0.
 
 1. اتصل بشبكة الراوتر وافتح الإعدادات ← ملفات اتصال الراوترات.
 2. اختر الملف الحالي أو «إضافة راوتر»، ثم سمّه وأدخل عنوان صفحة الإدارة واسم مستخدم الإدارة وكلمة الإدارة. كلمة الوايفاي قد تكون مختلفة.
@@ -19,7 +19,7 @@
 
 ## English
 
-This addition is in **Windows 1.3.0 only**. The published Android app remains 1.0.0.
+This addition is in **Windows 1.3.1 only**. The published Android app remains 1.0.0.
 
 1. Connect to the router network. Open Settings → Router connection profiles.
 2. Select the current profile or Add router. Set its name, management-page address, administration username and administration password. The Wi-Fi password may differ.
@@ -49,3 +49,11 @@ Official research references: [Huawei management password](https://consumer.huaw
 ![Arabic account settings](../images/windows/ar-profiles-credentials.png)
 
 ![English account settings](../images/windows/en-profiles-credentials.png)
+
+## استعادة الدخول / Sign-in recovery (Windows 1.3.1)
+
+انتهاء جلسة القراءة يعيد المصادقة والتفاصيل مرة واحدة. الردود المؤقتة تنتظر دقيقة (خمس دقائق لرد كثرة المحاولات). رفض كلمة المرور أو قفل المحاولات يوقف التكرار الآلي؛ راجع الإعدادات أو انتظر مدة الحظر في صفحة الراوتر، ثم اضغط «إعادة الاتصال». لا تضغطه بصورة متكررة أثناء الحظر. الكلمة والسجل لا يتغيران. تعود صفحة الرسائل تلقائيًا بعد استعادة المصادقة.
+
+An expired read session gets one fresh login and detail retry. Temporary refusals wait 60 seconds (five minutes for the frequent-login response). Credential rejection or lockout stops automatic login attempts. Check Settings or wait for the router's stated lockout period, then use Reconnect; do not repeatedly press it during a lockout. Saved credentials/history remain intact. SMS reloads when authentication recovers.
+
+![Recovered test inbox, synthetic SMS](../images/windows/ar-session-recovered.png)

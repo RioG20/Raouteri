@@ -180,5 +180,26 @@
     "height": 100,
     "sha256": "97fc2512c461d94f3597923ff2fd6d4599bc2b3974935b294eaa02636890236a",
     "data": "actual Windows 1.3.0 UI; isolated synthetic readings; router.local example; no personal device addresses or credentials"
+  },
+  {
+    "file": "images/windows/ar-reconnect.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "901a3909070089cbbcdf7e805e4c253511ba5eb691aaac4be4d560ca260ac35e",
+    "data": "Windows 1.3.1 isolated session-recovery fixture; synthetic messages only; no router requests or personal values"
+  },
+  {
+    "file": "images/windows/en-reconnect.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "ca67611b8961a3fccb31e78a70a94613591b1a870d2d1b9c4f6692c09da2549e",
+    "data": "Windows 1.3.1 isolated session-recovery fixture; synthetic messages only; no router requests or personal values"
+  },
+  {
+    "file": "images/windows/ar-session-recovered.png",
+    "width": 1350,
+    "height": 975,
+    "sha256": "b62ec39175f5ec8a5231b173f430f0860fce50e1c7a2802312d451033f07a6eb",
+    "data": "Windows 1.3.1 isolated session-recovery fixture; synthetic messages only; no router requests or personal values"
   }
 ]

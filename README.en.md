@@ -14,15 +14,21 @@ Windows provides a taskbar strip, tray indicators and a draggable island that ex
 
 | Platform | App version | File |
 |---|---|---|
-| Windows 11 x64 | 1.3.0 | [EXE installer](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Windows-Setup-1.3.0.exe) |
-| Windows 11 x64 | 1.3.0 | [Complete portable ZIP](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Windows-Portable-1.3.0.zip) |
-| Android 8.0+ | 1.0.0 | [Signed APK](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/Raouteri-Android-1.0.0.apk) |
+| Windows 11 x64 | 1.3.1 | [EXE installer](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Windows-Setup-1.3.1.exe) |
+| Windows 11 x64 | 1.3.1 | [Complete portable ZIP](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Windows-Portable-1.3.1.zip) |
+| Android 8.0+ | 1.0.0 | [Signed APK](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Android-1.0.0.apk) |
 
-[All releases](https://github.com/RioG20/Raouteri/releases) · [SHA-256 checksums](https://github.com/RioG20/Raouteri/releases/download/v2026.10.16/SHA256SUMS.txt)
+[All releases](https://github.com/RioG20/Raouteri/releases) · [SHA-256 checksums](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/SHA256SUMS.txt)
 
 This is a **distribution repository** with guides, screenshots and downloadable binaries in Releases. Development source, personal test data and private signing keys are not published here. GitHub's automatic “Source code” archives contain only this repository's documentation and images. Use the EXE, portable ZIP or APK above to install the app.
 
-## New in Windows 1.3.0: accounts and connection profiles
+## Windows 1.3.1 sign-in recovery fix
+
+Expired read sessions recover automatically. Temporary router sign-in refusals back off before retrying; rejected passwords and lockouts do not trigger automatic retries. A Reconnect button and clearer status explain the next step, and the SMS page reloads after authentication recovers. Saved credentials are preserved and router control commands are not automatically replayed. Android remains 1.0.0.
+
+![Reconnect after a temporary sign-in refusal](images/windows/en-reconnect.png)
+
+## Windows accounts and connection profiles
 
 In Settings, add and name a router, enter its management address, username and password, then save or test the connection. Each profile has its own protected password, usage, event history and device aliases. Switching activates the saved profile immediately; save your edits first.
 
@@ -42,7 +48,7 @@ In Settings, add and name a router, enter its management address, username and p
 | Hardware | CL4E6888M |
 | Customization | E6888-982-CUST 4.0.0.1(C1133) |
 
-Other models or firmware versions require separate testing: authentication, counters, SMS and commands may differ. Windows 1.3.0 and Android 1.0.0 are application versions, not router firmware versions.
+Other models or firmware versions require separate testing: authentication, counters, SMS and commands may differ. Windows 1.3.1 and Android 1.0.0 are application versions, not router firmware versions.
 
 ## Why Raouteri? How does it relate to AI Life?
 
@@ -52,7 +58,7 @@ Raouteri is independent and is not affiliated with or endorsed by Huawei. It is 
 
 ## Platform features
 
-| Feature | Windows 1.3.0 | Android 1.0.0 |
+| Feature | Windows 1.3.1 | Android 1.0.0 |
 |---|---|---|
 | Router battery, charging state and alerts | Yes | Yes |
 | Upload/download traffic and connected device count | Yes | Yes |

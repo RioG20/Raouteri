@@ -2,7 +2,7 @@
 
 | Platform | Version | Evidence |
 |---|---|---|
-| Windows 11 x64 | 1.3.0 | 26 core checks; actual Arabic/English profile add/save/switch controls, protected credential migration and isolation, independent history and aliases, endpoint-change reset, no-battery dashboard/island, and native taskbar regression checks. Read-only live Huawei login passed. Installed successfully; published DLL matches installed DLL and old settings/history were preserved. |
+| Windows 11 x64 | 1.3.1 | 31 core checks; actual Arabic/English profile add/save/switch controls, protected credential migration and isolation, independent history and aliases, endpoint-change reset, no-battery dashboard/island, and native taskbar regression checks. Read-only live Huawei login passed. Installed successfully; published DLL matches installed DLL and old settings/history were preserved. |
 | Android | 1.0.0 | 16 unit tests and 6 emulator scenarios; signed release APK installed and launched; live router authentication, SMS retrieval and foreground notification checked. Android Lint: no errors. |
 
 Android testing used an Android 16 emulator; a physical handset has not been tested. Background restrictions can differ by device. Windows compatibility testing used the developer's Windows 11 machine; installation on other PCs may reveal environment-specific issues.
@@ -24,3 +24,5 @@ Windows is not Authenticode-signed. Android signer certificate SHA-256:
 هذه الصفحة تلخص فحوص الإصدار، ولا تضمن التوافق مع كل راوتر أو هاتف أو برنامج ثابت. / These checks do not establish compatibility with every router, handset or firmware version.
 
 Windows profile UI audit made zero router requests. The separate live check read the existing Huawei router only (12 requests over 16 seconds) and authenticated successfully. Custom usernames and refusal to authenticate against an incompatible response were tested with simulated HTTP responses. Other router models, OpenWrt and MikroTik have not been certified or enabled. Android binary is unchanged from 1.0.0.
+
+Windows 1.3.1: session expiry, temporary refusals/cooldown, rejected-password/lockout suppression, bounded retries, SMS recovery and no control-command replay passed simulated-HTTP tests. Actual Arabic/English WinUI controls preserved the protected credential and recovered a failed SMS page without router requests. A separate live read-only check returned device/signal information and fetched 20 SMS without marking them read or printing their text. Upgrade preserved settings and history. The original long-running process did not retain its initial login error code, so that exact triggering response is not asserted.
