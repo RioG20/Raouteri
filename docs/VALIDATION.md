@@ -3,9 +3,14 @@
 | Platform | Version | Evidence |
 |---|---|---|
 | Windows 11 x64 | 1.3.1 | 31 core checks; actual Arabic/English profile add/save/switch controls, protected credential migration and isolation, independent history and aliases, endpoint-change reset, no-battery dashboard/island, and native taskbar regression checks. Read-only live Huawei login passed. Installed successfully; published DLL matches installed DLL and old settings/history were preserved. |
+| Android | 1.1.1 | 30 unit tests; 7 device scenarios. All 202 native percentage drawables render within bounds; notification uses modern and legacy resource IDs. The 15-second synthetic indicator test expires and does not start monitoring. Stale settings/island restart failures reproduced before the stop fix and passed afterwards. Signed 1.1.0→1.1.1 upgrade preserved protected data; production APK native icon and notification/UI stop verified. Lint: 0 errors, 143 warnings (119 vector-path complexity warnings). |
 | Android | 1.1.0 | 28 unit tests; 4 added emulator scenarios plus 6 previous regression scenarios. Actual bilingual profiles, encrypted migration/isolation, IP privacy, speed units, SMS confirmation/cancellation and notification permission/number toggles passed. Signed 1.0.0→1.1.0 upgrade preserved protected credentials/history/aliases. Production APK numeric icon, live authentication and read-only SMS retrieval checked. Lint: 0 errors, 25 warnings. |
 
 Android testing used an Android 16 emulator; a physical handset has not been tested, including the target POCO F4 / HyperOS 1.00.15.0 Stable EU. Background restrictions and status-icon visibility can differ by device. Windows compatibility testing used the developer's Windows 11 machine; installation on other PCs may reveal environment-specific issues.
+
+1.1.1 is a compatibility attempt for a report that HyperOS shows the app logo instead of the 1.1.0 numeric icon. The handset outcome is unconfirmed. It uses bundled native vector resource IDs rather than runtime bitmaps and adds a separately labeled 15-second test of 68. The original 1.1.0 evidence below remains historical. Stopping monitoring now cancels in-flight reads, removes the service notification, preserves disabled state across stale settings and ignores stale island actions. Permission-only requests no longer start monitoring.
+
+The exact signed 1.1.1 APK authenticated with the live router and retrieved its SMS page in a read-only smoke check. No router-control command or real SMS read-state change was executed. Emulator credentials/data were cleared afterwards. APK size: 1,884,028 bytes; original signer retained. Memory figures below are historical 1.1.0 samples, not new 1.1.1 measurements.
 
 Router: Huawei E6888-982, firmware 4.0.0.1(H3568SP6C983), WEBUI 4.0.0.1(W11SP6C7001). Per-device counters that remain zero are not represented as verified usage.
 

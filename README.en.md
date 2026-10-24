@@ -16,13 +16,20 @@ Windows provides a taskbar strip, tray indicators and a draggable island that ex
 |---|---|---|
 | Windows 11 x64 | 1.3.1 | [EXE installer](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Windows-Setup-1.3.1.exe) |
 | Windows 11 x64 | 1.3.1 | [Complete portable ZIP](https://github.com/RioG20/Raouteri/releases/download/v2026.10.23/Raouteri-Windows-Portable-1.3.1.zip) |
-| Android 8.0+ | 1.1.0 | [Signed APK](https://github.com/RioG20/Raouteri/releases/download/android-v1.1.0/Raouteri-Android-1.1.0.apk) |
+| Android 8.0+ | 1.1.1 | [Signed APK](https://github.com/RioG20/Raouteri/releases/download/android-v1.1.1/Raouteri-Android-1.1.1.apk) |
 
-[All releases](https://github.com/RioG20/Raouteri/releases) · [SHA-256 checksums](https://github.com/RioG20/Raouteri/releases/download/android-v1.1.0/SHA256SUMS.txt)
+[All releases](https://github.com/RioG20/Raouteri/releases) · [SHA-256 checksums](https://github.com/RioG20/Raouteri/releases/download/android-v1.1.1/SHA256SUMS.txt)
 
 This is a **distribution repository** with guides, screenshots and downloadable binaries in Releases. Development source, personal test data and private signing keys are not published here. GitHub's automatic “Source code” archives contain only this repository's documentation and images. Use the EXE, portable ZIP or APK above to install the app.
 
-## Android 1.1.0: router battery in the top status bar
+## Android 1.1.1: router battery in the top status bar
+
+1.1.1 switches to bundled drawable icons for compatibility and adds **Test the status-bar number**: a synthetic 68 for 15 seconds, without changing readings or polling the router. It also warns about quiet channels. Some HyperOS settings can show the drawer notification without a status icon; this compatibility attempt has not yet been confirmed on the handset. See [diagnostic steps](docs/ANDROID-HYPEROS.md).
+
+Stop fix: ends polling/service/notification, cancels the in-flight request and ignores stale settings/island restarts. This stops the app monitor; it sends no shutdown or configuration change to the router.
+
+<img src="images/android/ar-indicator-test-settings.png" width="300" alt="Status-bar indicator test button">
+<img src="images/android/ar-temporary-test-notification.png" width="300" alt="Explicitly labeled temporary 68 test">
 
 The router battery percentage appears as a number such as **68** with two Wi-Fi waves in the app notification's status-bar slot, enabled by default. Settings offers Percentage with Wi-Fi waves, Percentage only and Router icon. The waves identify the router; they are not a signal-strength measurement. Charging and full details remain inside the notification; your phone battery indicator is unchanged. Missing readings or router disconnection use the glyph. Notification permission and system status-bar settings still control visibility. See the [POCO / HyperOS guide](docs/ANDROID-HYPEROS.md).
 
@@ -33,7 +40,7 @@ This update also adds connection profiles, editable usernames, read-session reco
 
 ## Windows 1.3.1 sign-in recovery fix
 
-Expired read sessions recover automatically. Temporary router sign-in refusals back off before retrying; rejected passwords and lockouts do not trigger automatic retries. A Reconnect button and clearer status explain the next step, and the SMS page reloads after authentication recovers. Saved credentials are preserved and router control commands are not automatically replayed. Android 1.1.0 now includes this behavior too.
+Expired read sessions recover automatically. Temporary router sign-in refusals back off before retrying; rejected passwords and lockouts do not trigger automatic retries. A Reconnect button and clearer status explain the next step, and the SMS page reloads after authentication recovers. Saved credentials are preserved and router control commands are not automatically replayed. Android 1.1.1 now includes this behavior too.
 
 ![Reconnect after a temporary sign-in refusal](images/windows/en-reconnect.png)
 
@@ -41,7 +48,7 @@ Expired read sessions recover automatically. Temporary router sign-in refusals b
 
 In Settings, add and name a router, enter its management address, username and password, then save or test the connection. Each profile has its own protected password, usage, event history and device aliases. Switching activates the saved profile immediately; save your edits first.
 
-**The implemented connector is Huawei WebUI/SCRAM compatible with the tested device. A configurable username does not automatically add support for every router.** OpenWrt and MikroTik are researched, not enabled. See [compatibility and setup](docs/ROUTER-PROFILES.md). Profiles are available in Windows 1.3.1 and Android 1.1.0.
+**The implemented connector is Huawei WebUI/SCRAM compatible with the tested device. A configurable username does not automatically add support for every router.** OpenWrt and MikroTik are researched, not enabled. See [compatibility and setup](docs/ROUTER-PROFILES.md). Profiles are available in Windows 1.3.1 and Android 1.1.1.
 
 ![Router connection profiles](images/windows/en-profiles.png)
 
@@ -57,7 +64,7 @@ In Settings, add and name a router, enter its management address, username and p
 | Hardware | CL4E6888M |
 | Customization | E6888-982-CUST 4.0.0.1(C1133) |
 
-Other models or firmware versions require separate testing: authentication, counters, SMS and commands may differ. Windows 1.3.1 and Android 1.1.0 are application versions, not router firmware versions.
+Other models or firmware versions require separate testing: authentication, counters, SMS and commands may differ. Windows 1.3.1 and Android 1.1.1 are application versions, not router firmware versions.
 
 ## Why Raouteri? How does it relate to AI Life?
 
@@ -67,7 +74,7 @@ Raouteri is independent and is not affiliated with or endorsed by Huawei. It is 
 
 ## Platform features
 
-| Feature | Windows 1.3.1 | Android 1.1.0 |
+| Feature | Windows 1.3.1 | Android 1.1.1 |
 |---|---|---|
 | Router battery, charging state and alerts | Yes | Yes |
 | Upload/download traffic and connected device count | Yes | Yes |
@@ -102,7 +109,7 @@ The Windows build is currently unsigned by a commercial publisher certificate. D
 4. The island is optional and requires permission to display over other apps. You can also add the Raouteri home-screen widget.
 5. If the phone stops background monitoring, review the app's battery settings. Force-stopping the app requires opening it again. Background and overlay behavior varies by manufacturer.
 
-Install 1.1.0 over 1.0.0 without uninstalling. The signing key is unchanged and existing data migrates locally. On POCO/HyperOS, enable notification icons in system status-bar settings if the number is missing. See the [bilingual guide](docs/ANDROID-HYPEROS.md).
+Install 1.1.1 over 1.0.0 without uninstalling. The signing key is unchanged and existing data migrates locally. On POCO/HyperOS, enable notification icons in system status-bar settings if the number is missing. See the [bilingual guide](docs/ANDROID-HYPEROS.md).
 
 The release APK is signed with the project's key; the private key is not published. Emulator tests and live router connectivity have passed; a physical phone has not yet been tested. See [validation details](docs/VALIDATION.md).
 
