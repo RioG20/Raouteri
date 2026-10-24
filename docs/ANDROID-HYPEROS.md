@@ -2,7 +2,9 @@
 
 ## العربية
 
-تحديث 1.1.1 يستخدم أيقونات متجهة مدمجة بدل الصور المرسومة وقت التشغيل، مع تعبئة معرّف الأيقونة القديم والحديث. هذه محاولة توافق؛ سبب غياب المؤشر على هاتف HyperOS لم يُثبت بعد، ونجاح المحاكي لا يضمن ظهوره على كل هاتف.
+**حل مؤكد بتجربة المستخدم على POCO F4 / HyperOS 1.00.15.0 Stable EU، بتاريخ 24 أكتوبر 2026:** إذا ظهر شعار راوتري بدل النسبة، افتح إعدادات الهاتف ← الإشعارات وشريط الحالة ← شريط الحالة، وعطّل **استخدام أيقونات التطبيقات للإشعارات / Use app icons for notifications**. هذا خيار مستقل عن نمط الإشعارات Android؛ تغيير النمط وحده لم يحل الحالة المبلّغ عنها. بعد تعطيله ظهر اختبار 68 لمدة 15 ثانية ثم عادت النسبة الحقيقية، كما أكد المستخدم عمل إيقاف المتابعة في 1.1.1. يغيّر الخيار طريقة أيقونات إشعارات الهاتف عمومًا، وقد تختلف تسميته أو إتاحته حسب النظام. لا يحتاج الحل APK جديدًا أو حذف البيانات. هذا تأكيد لهذه الحالة، وليس اختبارًا شاملًا لكل الهواتف.
+
+تحديث 1.1.1 يستخدم أيقونات متجهة مدمجة بدل الصور المرسومة وقت التشغيل، مع تعبئة معرّف الأيقونة القديم والحديث. تغيير الأيقونات وحده لم يحل الحالة المبلّغ عنها؛ احتاج الهاتف تعطيل خيار استبدالها بشعار التطبيق كما سبق. نجاح المحاكي لا يضمن ظهوره على كل هاتف.
 
 إذا كان إشعار راوتري موجودًا لكن الرقم غائب، أو يظهر شعار التطبيق مكانه:
 
@@ -29,11 +31,13 @@
 
 <img src="../images/android/ar-notification-settings.png" width="320" alt="إعدادات النسبة والإشعار">
 
-تم التحقق على محاكي Android 16. الهاتف المستهدف POCO F4 / HyperOS 1.00.15.0 Stable EU لم يكن متصلًا للاختبار؛ لا يستطيع التطبيق تجاوز إخفاء الأيقونات أو قيود الخلفية التي يختارها النظام.
+الاختبارات الآلية على محاكي Android 16؛ الهاتف الفعلي لم يكن متصلًا بأدوات التطوير. تأكيد المستخدم لظهور الرقم والاختبار والإيقاف موضح أعلاه، ولا يشمل اختبار الخلفية طويل المدة. لا يستطيع التطبيق تجاوز إخفاء الأيقونات أو قيود الخلفية التي يختارها النظام.
 
 ## English
 
-Version 1.1.1 uses bundled vector resources instead of runtime bitmaps, populating modern and legacy notification icon IDs. This is a compatibility change, not a confirmed diagnosis of HyperOS behavior. Emulator success does not certify every handset.
+**User-confirmed on POCO F4 / HyperOS 1.00.15.0 Stable EU, October 24, 2026:** if the Raouteri logo replaces the percentage, open phone Settings → Notifications & status bar → Status bar and disable **Use app icons for notifications**. This is separate from Android notification style; changing that style alone did not resolve this report. After disabling the option, the synthetic 68 appeared for 15 seconds and the real battery number returned. The user also confirmed that Stop monitoring works in 1.1.1. This system option affects notification icons across the phone; its name and availability vary. No new APK or data reset is needed. This confirms the reported case, not every handset.
+
+Version 1.1.1 uses bundled vector resources instead of runtime bitmaps, populating modern and legacy notification icon IDs. The resource change alone did not resolve the reported handset case; disabling the system app-icon substitution option above did. Emulator success does not certify every handset.
 
 If the drawer notification exists but its number is absent, or the app logo replaces it:
 
@@ -58,7 +62,7 @@ The default style is Percentage with Wi-Fi waves; the waves identify the router 
 
 <img src="../images/android/en-notification-settings.png" width="320" alt="Notification and battery-number options">
 
-Verified on an Android 16 emulator. The target POCO F4 / HyperOS 1.00.15.0 Stable EU was not connected for testing. App code cannot override system-wide status-icon or background restrictions.
+Automated checks used an Android 16 emulator; the physical handset was not connected to development tools. The user's confirmation of the number, temporary test and stop behavior is recorded above and does not cover long-running background reliability. App code cannot override system-wide status-icon or background restrictions.
 
 Official references: [Xiaomi status-bar icons](https://www.mi.com/my/support/article/KA-33188/), [POCO F4 notification permissions](https://www.mi.com/fr/support/faq/details/KA-785217/), [Android notification permission](https://developer.android.com/develop/ui/compose/notifications/notification-permission).
 

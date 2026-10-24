@@ -24,7 +24,7 @@ This is a **distribution repository** with guides, screenshots and downloadable 
 
 ## Android 1.1.1: router battery in the top status bar
 
-1.1.1 switches to bundled drawable icons for compatibility and adds **Test the status-bar number**: a synthetic 68 for 15 seconds, without changing readings or polling the router. It also warns about quiet channels. Some HyperOS settings can show the drawer notification without a status icon; this compatibility attempt has not yet been confirmed on the handset. See [diagnostic steps](docs/ANDROID-HYPEROS.md).
+1.1.1 switches to bundled drawable icons for compatibility and adds **Test the status-bar number**: a synthetic 68 for 15 seconds, without changing readings or polling the router. It also warns about quiet channels. **The user confirmed the number on POCO F4 / HyperOS after disabling Use app icons for notifications in system status-bar settings**; Android notification style alone was insufficient. The test showed 68, then the actual percentage returned, and Stop monitoring worked. See [steps and validation limits](docs/ANDROID-HYPEROS.md).
 
 Stop fix: ends polling/service/notification, cancels the in-flight request and ignores stale settings/island restarts. This stops the app monitor; it sends no shutdown or configuration change to the router.
 
@@ -111,7 +111,7 @@ The Windows build is currently unsigned by a commercial publisher certificate. D
 
 Install 1.1.1 over 1.0.0 without uninstalling. The signing key is unchanged and existing data migrates locally. On POCO/HyperOS, enable notification icons in system status-bar settings if the number is missing. See the [bilingual guide](docs/ANDROID-HYPEROS.md).
 
-The release APK is signed with the project's key; the private key is not published. Emulator tests and live router connectivity have passed; a physical phone has not yet been tested. See [validation details](docs/VALIDATION.md).
+The release APK is signed with the project's key; the private key is not published. Emulator tests and live router connectivity passed. The user confirmed the number, temporary test and Stop monitoring on POCO F4 after the system setting above was adjusted. This does not certify all phones or long-running background behavior. See [validation details](docs/VALIDATION.md).
 
 ## Screenshots
 
